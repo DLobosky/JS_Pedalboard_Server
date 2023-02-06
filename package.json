@@ -1,17 +1,17 @@
 {
-  "name": "sergey-netlify",
+  "name": "delay",
   "version": "1.0.0",
-  "description": "A Sergey example project, ready for Netlify",
-  "private": true,
-  "main": "index.js",
+  "description": "",
+  "main": "assets/index.js",
   "scripts": {
-    "start": "sergey",
-    "dev": "sergey --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sergey --watch",
+    "start": "sergey"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sergey": "0.0.13"
+    "sergey": "0.0.6"
   }
 }
