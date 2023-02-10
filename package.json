@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/DLobosky/JS_Pedalboard_Server/issues"
   },
-  "homepage": "https://github.com/DLobosky/JS_Pedalboard_Server#readme"
+  "homepage": "https://github.com/DLobosky/JS_Pedalboard_Server#readme",
+  "devDependencies": {}
 }

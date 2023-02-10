@@ -17,6 +17,13 @@
     <meta name="twitter:title" content="JavaScript pedalboard" />
     <meta name="twitter:description" content="Guitar pedals in the browser!" />
     <meta name="twitter:image" content="https://pedalboard.netlify.com/assets/OG.png" />
+    <script type="importmap">
+      {
+          "imports": {
+              "Gpio": "./node_modules/onoff/onoff.js"
+          }
+      }
+  </script>
 </head>
 <body class="loading">
     <div class="pedalboard"></div>
@@ -45,5 +52,6 @@
 
     <audio src="/assets/guitar.mp3" loop />
     <script src="/assets/index.js" type="module"></script>
+    <script type="module" src="./node_modules/onoff/onoff.js"></script>
 </body>
 </html>
