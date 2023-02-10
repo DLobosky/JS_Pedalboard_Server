@@ -111,6 +111,21 @@ switch1.watch(function (err, value) { //Watch for hardware interrupts on pushBut
       
         output.connect(ctx.destination);
       };
+
+      (() => {
+        const getStarted = ({ target }) => {
+          document.body.classList.remove('loading');
+          setTimeout(() => {
+            target.parentNode.remove();
+            load(target.classList.contains('start--live'));
+          }, 1000);
+        };
+      
+        [].forEach.call(document.querySelectorAll('.start'), el => {
+          el.addEventListener('click', getStarted);
+        });
+      })();
+      
     }
     //================================================================================================================================================================
     if(value == 0){
@@ -206,23 +221,23 @@ switch1.watch(function (err, value) { //Watch for hardware interrupts on pushBut
       
         output.connect(ctx.destination);
       };
+
+      (() => {
+        const getStarted = ({ target }) => {
+          document.body.classList.remove('loading');
+          setTimeout(() => {
+            target.parentNode.remove();
+            load(target.classList.contains('start--live'));
+          }, 1000);
+        };
+      
+        [].forEach.call(document.querySelectorAll('.start'), el => {
+          el.addEventListener('click', getStarted);
+        });
+      })();
+      
     }
 
 });
 
 //================================================================================================================================================================
-
-
-(() => {
-  const getStarted = ({ target }) => {
-    document.body.classList.remove('loading');
-    setTimeout(() => {
-      target.parentNode.remove();
-      load(target.classList.contains('start--live'));
-    }, 1000);
-  };
-
-  [].forEach.call(document.querySelectorAll('.start'), el => {
-    el.addEventListener('click', getStarted);
-  });
-})();
