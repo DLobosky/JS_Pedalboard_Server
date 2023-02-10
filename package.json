@@ -1,7 +1,7 @@
 {
   "name": "delay",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [View the project](https://pedalboard.netlify.com/)\r - [Accompanying blog post](http://trysmudford.com/blog/pedalboard/)\r - [Video demonstration](https://www.youtube.com/watch?v=OJVmZ7hbVPQ)",
   "main": "assets/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "onoff": "^6.0.3",
     "sergey": "0.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DLobosky/JS_Pedalboard_Server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DLobosky/JS_Pedalboard_Server/issues"
+  },
+  "homepage": "https://github.com/DLobosky/JS_Pedalboard_Server#readme"
 }
