@@ -9,10 +9,10 @@ import { boostPedal } from './src/pedals/boost.js';
 import { compressorPedal } from './src/pedals/compressor.js';
 import { overdrivePedal } from './src/pedals/overdrive.js';
 import { chorusPedal } from './src/pedals/chorus.js';
-import { Gpio } from onoff;
+// import { Gpio } from '../node_modules/onoff/onoff.js';
 
-//var Gpio = require(['onoff']).Gpio; //include onoff to interact with the GPIO
-var switch1 = new Gpio(17, 'in', 'both'); //use GPIO pin 17 as input, and 'both' button presses, and releases should be handled
+var gpio = import('onoff')._gpio; //include onoff to interact with the GPIO
+var switch1 = new gpio(17, 'in', 'both'); //use GPIO pin 17 as input, and 'both' button presses, and releases should be handled
 
 switch1.watch(function (err, value) { //Watch for hardware interrupts on pushButton GPIO, specify callback function
   if (err) {

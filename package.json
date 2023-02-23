@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "onoff": "^6.0.3",
     "sergey": "0.0.6"
   },
